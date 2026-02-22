@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "TT Commons Pro";
+    src: url("./fonts/TT Commons Pro/TT-Commons-Pro-Normal.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "TT Commons Pro";
+    src: url("./fonts/TT Commons Pro/TT-Commons-Pro-Medium.otf") format("opentype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "TT Commons Pro";
+    src: url("./fonts/TT Commons Pro/TT-Commons-Pro-DemiBold.otf") format("opentype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "GT Alpina";
+    src: url("./fonts/GT Alpina/GTAlpina-Regular.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "GT Alpina";
+    src: url("./fonts/GT Alpina/GTAlpina-Light.otf") format("opentype");
+    font-weight: 300;
+}
+
+@theme {
+    --font-tt: "TT Commons Pro", sans-serif;
+    --font-alpina: "GT Alpina", serif;
+    --color-brand-dark: #171717;
+}
+
+@layer base {
+    body {
+        @apply bg-white text-brand-dark font-tt;
+        /* Responsive padding handled via utility logic */
+        @apply p-16 max-sm:px-5 max-sm:py-12 max-md:px-6;
+    }
+
+    h1 {
+        @apply text-4xl md:text-5xl font-semibold tracking-tight;
+    }
+}
