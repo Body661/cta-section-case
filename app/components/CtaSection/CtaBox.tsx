@@ -15,9 +15,9 @@ export default function CtaBox({title, subtitle, bgImage}: CtaBoxProps) {
             style={{backgroundImage: `linear-gradient(0deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%), url(${bgImage})`}}
         >
             <div className="flex justify-between items-end w-full text-white">
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-1 w-[100%]">
                     <h2 className="font-semibold text-[22px] md:text-[28px] leading-[24px] tracking-[-0.22px]">{title}</h2>
-                    <p className="text-[17px] md:text-[19px] opacity-50 leading-[24px] font-medium">{subtitle}</p>
+                    <p className="text-[17px] md:text-[19px] opacity-50 leading-[24px] font-medium w-5/6">{subtitle}</p>
                 </div>
 
                 <Link href='#'
